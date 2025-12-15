@@ -1,0 +1,30 @@
+{
+  "id": "INICIO",
+  "tipo": "INFO",
+  "texto": "Hola, soy el asistente de IEB. Estoy aquí para ayudarte a encontrar la formación adecuada."
+},
+{
+  "id": "PREGUNTA_TIPO_ESTUDIO",
+  "tipo": "BOTONERA",
+  "texto": "¿Qué tipo de estudio te interesa?",
+  "opciones": [
+    { "valor": "GRADO", "texto": "Grados Universitarios" },
+    { "valor": "MASTER_PRESENCIAL", "texto": "Máster Presencial" },
+    { "valor": "MASTER_ONLINE", "texto": "Máster Online" },
+    { "valor": "CURSOS_ONLINE", "texto": "Cursos Especializados / Cursos Cortos" },
+    { "valor": "CURSOS_VERANO", "texto": "Cursos de Verano" }
+  ],
+  "next": {
+    "GRADO": "LISTAR_CURSOS",
+    "MASTER_PRESENCIAL": "LISTAR_CURSOS",
+    "MASTER_ONLINE": "LISTAR_CURSOS",
+    "CURSOS_ONLINE": "LISTAR_CURSOS",
+    "CURSOS_VERANO": "LISTAR_CURSOS"
+  }
+},
+{
+  "id": "LISTAR_CURSOS",
+  "tipo": "BOTONERA",
+  "categoriaFlujo": "{{seleccionCategoriaEstudio}}",
+  "texto": "Aquí tienes los programas disponibles en esa categoría."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "master_finanzas",
+  "version": 1,
+  "nodos": [
+    {
+      "id": "inicio",
+      "tipo": "INFO",
+      "titulo": "Bienvenido",
+      "texto": "Hola, ¿en qué puedo ayudarte?",
+      "next": "fin"
+    },
+    {
+      "id": "fin",
+      "tipo": "INFO",
+      "titulo": "Fin",
+      "texto": "Gracias por tu mensaje",
+      "next": null
+    }
+  ]
+}

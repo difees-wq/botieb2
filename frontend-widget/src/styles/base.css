@@ -1,0 +1,209 @@
+#ieb-chat-window {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 360px;
+  height: 520px;
+  background: var(--ieb-gray-bg);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  overflow: hidden;
+  display: none;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+#ieb-chat-window.open {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.chat-header {
+  height: 56px;
+  background: var(--ieb-blue);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.1);
+}
+
+.chat-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chat-close-btn,
+.chat-minimize-btn {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-close-btn:hover,
+.chat-minimize-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.chat-messages {
+  height: calc(100% - 56px);
+  overflow-y: auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  padding-bottom: 45px; /* espacio inferior para que el último mensaje no quede pegado */
+}
+
+/* BOT BUBBLE — gris claro */
+.msg-bot {
+  background: #eef1f5;
+  color: #0c0c0c;
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  animation: msg-appear 200ms ease-out;
+}
+
+/* USER BUBBLE — amarillo suave */
+.msg-user {
+  background: #f7d173;
+  color: #0c0c0c;
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin-bottom: 12px;
+  align-self: flex-end;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  animation: msg-appear 200ms ease-out;
+}
+
+/* CHOICE LIST */
+.choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* OPCIONES — blancas con borde y texto azul */
+.choice-btn {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  color: #003876;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.choice-btn:hover {
+  background: #f5f7fa;
+}
+
+.choice-btn:active {
+  transform: translateY(1px);
+}
+
+/* Deshabilitado para evitar clic en pasos anteriores */
+.choice-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* FORMULARIO */
+.chat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 4px;
+  color: #333;
+  font-size: 13px;
+}
+
+.form-field input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 10px;
+  transition: box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.form-field input[type="text"]:hover {
+  border-color: rgba(0,0,0,0.25);
+}
+
+.form-field input[type="text"]:focus {
+  outline: none;
+  border-color: var(--ieb-blue-light);
+  box-shadow: 0 0 0 3px rgba(25,85,166,0.15);
+}
+
+.form-submit {
+  align-self: flex-end;
+  padding: 10px 16px;
+  background: var(--ieb-blue);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background: var(--ieb-blue-light);
+}
+
+.form-submit:active {
+  transform: translateY(1px);
+}
+
+/* Animación */
+@keyframes msg-appear {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  #ieb-chat-window {
+    width: 95vw;
+    right: 2.5vw;
+    bottom: 16px;
+    height: 70vh;
+  }
+}
+
+.chat-messages::after {
+  content: "";
+  flex: 0 0 40px;  /* prueba 40px; si quieres más aire, pon 48 o 56 */
+}
+
+.chat-form textarea {
+    width: 100%;
+    border-radius: 12px;     /* mismo borde redondeado que los inputs */
+    border: 1px solid #ccc;  /* mismo borde gris */
+    padding: 12px;           /* mismo padding interno */
+    font-size: 15px;         /* mismo tamaño de texto */
+    box-sizing: border-box;
+    resize: vertical;
+}

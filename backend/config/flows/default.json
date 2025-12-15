@@ -1,0 +1,391 @@
+{
+  "id": "default",
+  "version": 1,
+  "startNode": "N0",
+  "nodos": [
+    {
+      "id": "N0",
+      "tipo": "BOTONERA",
+      "titulo": "Hola, soy el asistente de IEB. Antes de comenzar, necesitamos tu consentimiento para tratar tus datos según nuestra <a href='https://www.ieb.es/politica-de-privacidad/' target='_blank' style='color:#003366; text-decoration:underline;'>Política de Privacidad</a>.",
+      "opciones": [
+        { "valor": "Aceptar", "texto": "Acepto la Política de Privacidad" }
+      ],
+      "saveToState": "acceptedPrivacy",
+      "next": {
+        "Aceptar": "N1"
+      }
+    },
+    {
+      "id": "N1",
+      "tipo": "BOTONERA",
+      "titulo": "¿Cómo puedo ayudarte?",
+      "texto": "¿Cómo puedo ayudarte?",
+      "opciones": [
+        { "valor": "Solicitar información al Equipo de Admisión", "texto": "Solicitar información al Equipo de Admisión" },
+        { "valor": "Comenzar proceso de admisión", "texto": "Comenzar proceso de admisión" },
+        { "valor": "Resolver dudas en línea", "texto": "Resolver dudas en línea" }
+      ],
+      "next": {
+        "Solicitar información al Equipo de Admisión": "N2",
+        "Comenzar proceso de admisión": "N2",
+        "Resolver dudas en línea": "N20"
+      }
+    },
+    {
+      "id": "N2",
+      "tipo": "BOTONERA",
+      "titulo": "¿Qué tipo de estudio te interesa?",
+      "texto": "¿Qué tipo de estudio te interesa?",
+      "saveToState": "type1", 
+      "opciones": [
+        { "valor": "Grado", "texto": "Grados" },
+        { "valor": "Master", "texto": "Másteres" },
+        { "valor": "Programas", "texto": "Programas" },
+        { "valor": "Cursos", "texto": "Cursos" },
+        { "valor": "Curso de verano", "texto": "Cursos de verano" } 
+      ],
+      "next": {
+        "Grado": "N3",
+        "Master": "N4",
+        "Programas": "N2P",
+        "Cursos": "N2C",
+        "Curso de verano": "N6"
+      }
+    },
+    {
+      "id": "N3",
+      "tipo": "BOTONERA",
+      "titulo": "¿Te interesan Grados o Doble titulaciones de Grado y Máster?",
+      "texto": "¿Te interesan Grados o Doble titulaciones de Grado y Máster?",
+      "saveToState": "type2", 
+      "opciones": [
+        { "valor": "Grado universitario", "texto": "Grado universitario" },
+        { "valor": "Grado + Máster de especialización", "texto": "Grado y Máster de especialización" }
+      ],
+      "next": {
+        "Grado universitario": "N6",
+        "Grado + Máster de especialización": "N6"
+      }
+    },
+    {
+      "id": "N4",
+      "tipo": "BOTONERA",
+      "titulo": "¿Te interesan Másters presenciales u online?",
+      "texto": "¿Te interesan Másters presenciales u online?",
+      "saveToState": "type2", 
+      "opciones": [
+        { "valor": "Másteres presencial", "texto": "Presenciales" },
+        { "valor": "Másteres online", "texto": "Online o híbridos" }
+      ],
+      "next": {
+        "Másteres presencial": "N6",
+        "Másteres online": "N6"
+      }
+    },
+    {
+  "id": "N2C",
+  "tipo": "BOTONERA",
+  "titulo": "¿Qué tipo de curso te interesa?",
+  "saveToState": "type2",
+  "opciones": [
+    { "valor": "Superior", "texto": "Superiores" },
+    { "valor": "Técnico", "texto": "Técnicos" },
+    { "valor": "Certificado", "texto": "Certificaciones" },
+    { "valor": "Directivo", "texto": "Directivos" }
+  ],
+  "next": {
+    "Superior": "N6",
+    "Técnico": "N6",
+    "Certificado": "N6",
+    "Directivo": "N6"
+  }
+},
+
+{
+  "id": "N2P",
+  "tipo": "BOTONERA",
+  "titulo": "¿Qué tipo de programa te interesa?",
+  "saveToState": "type2",
+  "opciones": [
+    { "valor": "Especialización", "texto": "Programas de Especialización" },
+    { "valor": "Directivo", "texto": "Programas Directivos" }
+  ],
+  "next": {
+    "Especialización": "N6",
+    "Directivo": "N6"
+  }
+},
+
+    {
+      "id": "N6",
+      "tipo": "DYNAMIC",
+      "titulo": "¿En qué año quieres estudiar?",
+      "texto": "¿En qué año quieres estudiar?",
+      "dynamicQuery": "getAvailableYears",
+      "saveToState": "selectedYear",
+      "next": "N7"
+    },
+    {
+      "id": "N7",
+      "tipo": "DYNAMIC",
+      "titulo": "Aquí están los estudios disponibles para el año seleccionado. Selecciona uno:",
+      "texto": "Aquí están los estudios disponibles para el año seleccionado. Selecciona uno:",
+      "dynamicQuery": "getCoursesByFilters",
+      "saveToState": "selectedCourseId",
+      "next": "N8"
+    },
+
+    {
+      "id": "N8",
+      "tipo": "BOTONERA",
+      "titulo": "El {{selectedCourseName}} es una gran elección. ¿Quieres que el equipo de admisión contacte contigo o resolver dudas?",
+      "texto": "El {{selectedCourseName}} es una gran elección. ¿Quieres que el equipo de admisión contacte contigo o resolver dudas?",
+      "opciones": [
+        { "valor": "resolver_dudas", "texto": "Enviar mis datos para resolver dudas" },
+        { "valor": "comenzar_admision", "texto": "Enviar datos para comenzar proceso de admisión" }
+      ],
+      "next": {
+        "resolver_dudas": "N9",
+        "comenzar_admision": "N9"
+      }
+    },
+    {
+      "id": "N9",
+      "tipo": "FORM",
+      "titulo": "Perfecto, escribe tu nombre, apellidos, teléfono y correo electrónico:",
+      "texto": "Perfecto, escribe tu nombre, apellidos, teléfono y correo electrónico:",
+      "camposFormulario": [
+        { "campo": "name", "label": "Nombre", "required": true },
+        { "campo": "lastName", "label": "Apellidos", "required": true },
+        { "campo": "phone", "label": "Teléfono", "required": true },
+        { "campo": "email", "label": "Correo electrónico", "required": true }
+      ],
+      "dataToSave": {
+        "name": "name",
+        "lastName": "lastName",
+        "phone": "phone",
+        "email": "email"
+      },
+      "next": "N9b"
+    },
+    {
+      "id": "N9b",
+      "tipo": "FORM",
+      "titulo": "Por favor, indica cualquier pregunta o comentario adicional:",
+      "texto": "Escribe aquí cualquier duda o comentario que quieras que el equipo de admisiones tenga en cuenta.",
+      "camposFormulario": [
+        { "campo": "comment", "label": "Comentario", "required": false, "textarea": true }
+      ],
+      "dataToSave": {
+        "comment": "userComment"
+      },
+      "next": "N10"
+    },
+    {
+      "id": "N10",
+      "tipo": "BOTONERA",
+      "titulo": "¿Cómo prefieres que contactemos contigo inicialmente?",
+      "texto": "¿Cómo prefieres que contactemos contigo inicialmente?",
+      "opciones": [
+        { "valor": "Llamada", "texto": "Llamada" },
+        { "valor": "Whatsapp", "texto": "Whatsapp" },
+        { "valor": "Correo electrónico", "texto": "Correo electrónico" }
+      ],
+      "next": {
+        "Llamada": "N11",
+        "Whatsapp": "N11",
+        "Correo electrónico": "N11"
+      }
+    },
+    {
+      "id": "N11",
+      "tipo": "BOTONERA",
+      "titulo": "Gracias por enviarnos tus datos, ¿Puedo ayudarte con algo más?",
+      "texto": "Gracias por enviarnos tus datos, ¿Puedo ayudarte con algo más?",
+      "opciones": [
+        { "valor": "Me interesan otros estudios", "texto": "Me interesan otros estudios" },
+        { "valor": "No, está bien, ¡Gracias!", "texto": "No, está bien, ¡Gracias!" }
+      ],
+      "next": {
+        "Me interesan otros estudios": "N2_REPEAT",
+        "No, está bien, ¡Gracias!": "N12"
+      }
+    },
+    {
+      "id": "N12",
+      "tipo": "INFO",
+      "titulo": "¡Gracias por contactar con IEB! Pronto te contactará nuestro equipo de admisión.",
+      "texto": "¡Gracias por contactar con IEB! Pronto te contactará nuestro equipo de admisión.",
+      "next": null
+    },
+    {
+      "id": "N20",
+      "tipo": "INFO",
+      "titulo": "Estamos en proceso de agregar el asistente virtual inteligente. Si tienes dudas, envíanos tus datos y el equipo de admisión contactará contigo.",
+      "texto": "Estamos en proceso de agregar el asistente virtual inteligente. Si tienes dudas, envíanos tus datos y el equipo de admisión contactará contigo.",
+      "next": "N12"
+    },
+
+    {
+  "id": "N2_REPEAT",
+  "tipo": "BOTONERA",
+  "titulo": "Perfecto, ¿Qué otro estudio te interesa?",
+  "saveToState": "type1",
+  "opciones": [
+    { "valor": "Grado", "texto": "Grados" },
+    { "valor": "Master", "texto": "Másteres" },
+    { "valor": "Programas", "texto": "Programas" },
+    { "valor": "Cursos", "texto": "Cursos" },
+    { "valor": "Curso de verano", "texto": "Cursos de verano" }
+  ],
+  "next": {
+    "Grado": "N3_REPEAT",
+    "Master": "N4_REPEAT",
+    "Programas": "N2P_REPEAT",
+    "Cursos": "N2C_REPEAT",
+    "Curso de verano": "N6_REPEAT"
+  }
+},
+{
+      "id": "N3_REPEAT",
+      "tipo": "BOTONERA",
+      "titulo": "¿Te interesan Grados o Doble titulaciones de Grado y Máster?",
+      "texto": "¿Te interesan Grados o Doble titulaciones de Grado y Máster?",
+      "saveToState": "type2", 
+      "opciones": [
+        { "valor": "Grado universitario", "texto": "Grado universitario" },
+        { "valor": "Grado + Máster de especialización", "texto": "Grado y Máster de especialización" }
+      ],
+      "next": {
+        "Grado universitario": "N6_REPEAT",
+        "Grado + Máster de especialización": "N6_REPEAT"
+      }
+    },
+    {
+      "id": "N4_REPEAT",
+      "tipo": "BOTONERA",
+      "titulo": "¿Te interesan Másters presenciales u online?",
+      "texto": "¿Te interesan Másters presenciales u online?",
+      "saveToState": "type2", 
+      "opciones": [
+        { "valor": "Másteres presencial", "texto": "Presenciales" },
+        { "valor": "Másteres online", "texto": "Online o híbridos" }
+      ],
+      "next": {
+        "Másteres presencial": "N6_REPEAT",
+        "Másteres online": "N6_REPEAT"
+      }
+    },
+    {
+  "id": "N2C_REPEAT",
+  "tipo": "BOTONERA",
+  "titulo": "¿Qué tipo de curso te interesa?",
+  "saveToState": "type2",
+  "opciones": [
+    { "valor": "Superior", "texto": "Superiores" },
+    { "valor": "Técnico", "texto": "Técnicos" },
+    { "valor": "Certificado", "texto": "Certificaciones" },
+    { "valor": "Directivo", "texto": "Directivos" }
+  ],
+  "next": {
+    "Superior": "N6_REPEAT",
+    "Técnico": "N6_REPEAT",
+    "Certificado": "N6_REPEAT",
+    "Directivo": "N6_REPEAT"
+  }
+},
+
+{
+  "id": "N2P_REPEAT",
+  "tipo": "BOTONERA",
+  "titulo": "¿Qué tipo de programa te interesa?",
+  "saveToState": "type2",
+  "opciones": [
+    { "valor": "Especialización", "texto": "Programas de Especialización" },
+    { "valor": "Directivo", "texto": "Programas Directivos" }
+  ],
+  "next": {
+    "Especialización": "N6_REPEAT",
+    "Directivo": "N6_REPEAT"
+  }
+},
+
+    {
+      "id": "N6_REPEAT",
+      "tipo": "DYNAMIC",
+      "titulo": "¿En qué año quieres estudiar?",
+      "texto": "¿En qué año quieres estudiar?",
+      "dynamicQuery": "getAvailableYears",
+      "saveToState": "selectedYear",
+      "next": "N7_REPEAT"
+    },
+    {
+      "id": "N7_REPEAT",
+      "tipo": "DYNAMIC",
+      "titulo": "Aquí están los estudios disponibles para el año seleccionado. Selecciona uno:",
+      "texto": "Aquí están los estudios disponibles para el año seleccionado. Selecciona uno:",
+      "dynamicQuery": "getCoursesByFilters",
+      "saveToState": "selectedCourseId",
+      "next": "N8_REPEAT"
+    },
+
+    {
+      "id": "N8_REPEAT",
+      "tipo": "BOTONERA",
+      "titulo": "El {{selectedCourseName}} es una gran elección. ¿Quieres que el equipo de admisión contacte contigo o resolver dudas?",
+      "texto": "El {{selectedCourseName}} es una gran elección. ¿Quieres que el equipo de admisión contacte contigo o resolver dudas?",
+      "opciones": [
+        { "valor": "resolver_dudas", "texto": "Enviar mis datos para resolver dudas" },
+        { "valor": "comenzar_admision", "texto": "Enviar datos para comenzar proceso de admisión" }
+      ],
+      "next": {
+        "resolver_dudas": "N9_REPEAT",
+        "comenzar_admision": "N9_REPEAT"
+      }
+    },
+
+{
+      "id": "N9_REPEAT",
+      "tipo": "FORM",
+      "titulo": "Por favor, indica cualquier pregunta o comentario adicional:",
+      "texto": "Escribe aquí cualquier duda o comentario que quieras que el equipo de admisiones tenga en cuenta.",
+      "camposFormulario": [
+        { "campo": "comment", "label": "Comentario", "required": false, "textarea": true }
+      ],
+      "dataToSave": {
+        "comment": "userComment"
+      },
+      "next": "N10_REPEAT"
+    },
+    {
+      "id": "N10_REPEAT",
+      "tipo": "BOTONERA",
+      "titulo": "¿Cómo prefieres que contactemos contigo inicialmente?",
+      "texto": "¿Cómo prefieres que contactemos contigo inicialmente?",
+      "opciones": [
+        { "valor": "Llamada", "texto": "Llamada" },
+        { "valor": "Whatsapp", "texto": "Whatsapp" },
+        { "valor": "Correo electrónico", "texto": "Correo electrónico" }
+      ],
+      "next": {
+        "Llamada": "N11_REPEAT",
+        "Whatsapp": "N11_REPEAT",
+        "Correo electrónico": "N11_REPEAT"
+      }
+    },
+    {
+      "id": "N11_REPEAT",
+      "tipo": "BOTONERA",
+      "titulo": "Gracias por enviarnos tus datos, ¿Puedo ayudarte con algo más?",
+      "texto": "Gracias por enviarnos tus datos, ¿Puedo ayudarte con algo más?",
+      "opciones": [
+        { "valor": "Me interesan otros estudios", "texto": "Me interesan otros estudios" },
+        { "valor": "No, está bien, ¡Gracias!", "texto": "No, está bien, ¡Gracias!" }
+      ],
+      "next": {
+        "Me interesan otros estudios": "N2_REPEAT",
+        "No, está bien, ¡Gracias!": "N12"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.chat-form textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+    resize: vertical;
+    box-sizing: border-box;
+    min-height: 80px;
+}

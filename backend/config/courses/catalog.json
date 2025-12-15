@@ -1,0 +1,15 @@
+
+  "courses": [
+    {
+      "slug": "grado-economia",
+      "name": "Grado en Economía",
+      "type": "GRADO",
+      "url": "https://www.ieb.es/grado/economia"
+    },
+    {
+      "slug": "master-finanzas",
+      "name": "Máster en Finanzas",
+      "type": "MASTER",
+      "url": "https://www.ieb.es/master/finanzas"
+    }
+  ]

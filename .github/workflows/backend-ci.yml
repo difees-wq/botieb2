@@ -1,0 +1,41 @@
+
+CONTENT
+
+name: Backend CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+
+jobs:
+  backend-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm --filter backend lint
+
+      - name: Run unit tests
+        run: pnpm --filter backend test:unit
+
+      - name: Run integration tests
+        run: |
+          echo "Skipping: Integration tests require SUPABASE TEST DATABASE"
+          # Placeholder: se pueden mockear o correr en un Supabase de staging
+

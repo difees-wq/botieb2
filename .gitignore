@@ -1,0 +1,33 @@
+
+# Node
+node_modules/
+*.log
+npm-debug.log
+
+# TypeScript
+*.tsbuildinfo
+dist/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Tests
+coverage/
+
+# Bundles
+frontend-widget/dist/
+
+# Logs
+logs/
+*.pid
+
+# OS
+.DS_Store
+Thumbs.db
+

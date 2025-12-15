@@ -1,0 +1,450 @@
+[
+  {
+    "slug": "curso-de-construccion-y-analisis-de-modelos-financieros",
+    "nombre": "Curso de Construcción y Análisis de Modelos Financieros",
+    "nivel": "POSGRADO",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-de-inversion-socialmente-responsable",
+    "nombre": "Curso de Inversión Socialmente Responsable",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-de-inversion-socialmente-responsable-preparatorio-esg-efp",
+    "nombre": "Curso de Inversión Socialmente Responsable (preparatorio ESG-EFP)",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-de-valoracion-de-crypto-activos",
+    "nombre": "Curso de Valoración de Crypto Activos",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-de-verano-preuniversitario-introduccion-a-las-relaciones-internacionales",
+    "nombre": "Curso de verano preuniversitario: Introducción a las Relaciones Internacionales",
+    "nivel": "GRADO",
+    "familia": "Cursos de Verano",
+    "categoriaFlujo": "CURSOS_VERANO"
+  },
+  {
+    "slug": "curso-de-verano-preuniversitario-introduccion-a-los-mercados-financieros",
+    "nombre": "Curso de verano preuniversitario: Introducción a los Mercados Financieros",
+    "nivel": "GRADO",
+    "familia": "Cursos de Verano",
+    "categoriaFlujo": "CURSOS_VERANO"
+  },
+  {
+    "slug": "curso-preparatorio-cfa-level-i",
+    "nombre": "Curso preparatorio CFA level I",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-superior-analisis-y-valoracion-sectorial",
+    "nombre": "Curso Superior Analisis y Valoracion Sectorial",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-superior-en-excel-aplicado-a-la-gestion-de-carteras",
+    "nombre": "Curso Superior en Excel Aplicado a la Gestión de Carteras",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-superior-en-prevencion-del-blanqueo-de-capitales",
+    "nombre": "Curso Superior en Prevención del Blanqueo de Capitales",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-superior-en-python",
+    "nombre": "Curso Superior en Python",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-superior-en-renta-fija",
+    "nombre": "Curso Superior en Renta Fija",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-superior-fondos-de-inversion-y-asesoramiento-corporativo",
+    "nombre": "Curso Superior Fondos de Inversión y Asesoramiento Corporativo",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-superior-gestion-financiera-de-la-empresa-online",
+    "nombre": "Curso Superior Gestión Financiera de la Empresa Online",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-superior-ppas-energeticos-introduccion-a-la-contabilidad-y-la-valoracion",
+    "nombre": "Curso Superior PPAs Energéticos. Introducción a la Contabilidad y la Valoración",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "curso-tecnico-en-mercados-financieros",
+    "nombre": "Curso Técnico en Mercados Financieros",
+    "nivel": "ONLINE",
+    "familia": "Cursos, Seminarios y Jornadas",
+    "categoriaFlujo": "CURSOS_ONLINE"
+  },
+  {
+    "slug": "grado-ade-y-master-en-bolsa-y-mercados-financieros",
+    "nombre": "GRADO ADE Y MASTER EN BOLSA Y MERCADOS FINANCIEROS",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-ade",
+    "nombre": "Grado en ADE",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-ade-y-master-en-banca-de-inversion",
+    "nombre": "Grado en ADE y Máster en Banca de Inversión",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-ade-y-master-en-bolsa-y-mercados-financieros",
+    "nombre": "Grado en ADE y Máster en Bolsa y Mercados Financieros",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-ade-y-master-en-bolsa-y-mercados-financieros-bilingue",
+    "nombre": "Grado en ADE y Máster en Bolsa y Mercados Financieros BILINGÜE",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-ade-y-master-en-bolsa-y-mercados-financieros-bilingue-plan-antiguo",
+    "nombre": "GRADO EN ADE Y MÁSTER EN BOLSA Y MERCADOS FINANCIEROS BILINGÜE (PLAN ANTIGUO)",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-ade-y-master-en-relaciones-internacionales",
+    "nombre": "Grado en ADE y Máster en Relaciones Internacionales",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-ade-y-master-in-business-analytics",
+    "nombre": "Grado en ADE y Master in Business Analytics",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho",
+    "nombre": "Grado en Derecho",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho-y-master-in-business-analytics",
+    "nombre": "GRADO EN DERECHO & MASTER IN BUSINESS ANALYTICS",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho-y-international-business-law-program",
+    "nombre": "GRADO EN DERECHO y International Business Law program",
+    "nivel": "GRADO",
+    "familia": "",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho-y-master-en-banca-de-inversion",
+    "nombre": "Grado en Derecho y Máster en Banca de Inversión",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho-y-master-en-bolsa-y-mercados-financieros",
+    "nombre": "Grado en Derecho y Máster en Bolsa y Mercados Financieros",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho-y-master-en-bolsa-y-mercados-financieros-bilingue",
+    "nombre": "Grado en Derecho y Máster en Bolsa y Mercados Financieros BILINGÜE",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho-y-master-en-bolsa-y-mercados-financieros-bilingue-2",
+    "nombre": "GRADO EN DERECHO Y MÁSTER EN BOLSA Y MERCADOS FINANCIEROS BILINGÜE",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho-y-master-en-relaciones-internacionales",
+    "nombre": "Grado en Derecho y Master en Relaciones Internacionales",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "grado-en-derecho-y-master-in-business-analytics-2",
+    "nombre": "Grado en Derecho y Master in Business Analytics",
+    "nivel": "GRADO",
+    "familia": "Estudios Universitarios",
+    "categoriaFlujo": "GRADO"
+  },
+  {
+    "slug": "master-de-acceso-a-la-abogacia-y-a-la-procura",
+    "nombre": "Máster de Acceso a la Abogacía y a la Procura",
+    "nivel": "POSGRADO",
+    "familia": "Master Universitario",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "master-en-bolsa-y-mercados-financieros",
+    "nombre": "Máster en Bolsa y Mercados Financieros",
+    "nivel": "POSGRADO",
+    "familia": "Master",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "master-en-corporate-finance-y-banca-de-inversiones",
+    "nombre": "Máster en Corporate Finance y Banca de Inversiones",
+    "nivel": "POSGRADO",
+    "familia": "Master",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "master-en-riesgos-financieros-y-auditoria-internacional",
+    "nombre": "Máster en Riesgos Financieros y Auditoría Internacional",
+    "nivel": "POSGRADO",
+    "familia": "Master Universitario",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "master-in-international-finance",
+    "nombre": "Master in International Finance",
+    "nivel": "POSGRADO",
+    "familia": "Master",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "master-online-en-blockchain-e-inversion-en-criptoactivos",
+    "nombre": "Máster Online en Blockchain e Inversión en Criptoactivos",
+    "nivel": "ONLINE",
+    "familia": "Masters On-Line",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "master-online-en-finanzas-corporativas",
+    "nombre": "Máster Online en Finanzas Corporativas",
+    "nivel": "ONLINE",
+    "familia": "Masters On-Line",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "master-online-en-finanzas-cuantitativas",
+    "nombre": "Máster Online en Finanzas Cuantitativas",
+    "nivel": "ONLINE",
+    "familia": "Masters On-Line",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "master-online-en-finanzas-digitales-e-innovacion",
+    "nombre": "Máster Online en Finanzas Digitales e Innovación",
+    "nivel": "ONLINE",
+    "familia": "Masters On-Line",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "master-online-en-mercados-financieros-y-gestion-de-activos",
+    "nombre": "Máster Online en Mercados Financieros y Gestión de Activos",
+    "nivel": "ONLINE",
+    "familia": "Masters On-Line",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "master-online-en-real-estate",
+    "nombre": "Máster Online en Real Estate",
+    "nivel": "ONLINE",
+    "familia": "Masters On-Line",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "master-online-global-mba-online-con-especializacion-en-finanzas",
+    "nombre": "Máster Online Global MBA Online con Especialización en Finanzas",
+    "nivel": "ONLINE",
+    "familia": "Master",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "mba-con-especializacion-en-finanzas",
+    "nombre": "MBA con Especialización en Finanzas",
+    "nivel": "POSGRADO",
+    "familia": "Master",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-asesoramiento-financiero-presencial",
+    "nombre": "Programa de Especialización en Asesoramiento Financiero. Presencial",
+    "nivel": "ONLINE",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "programa-de-especializacion-en-business-analytics-e-ia-para-finanzas",
+    "nombre": "Programa de Especialización en Business Analytics e IA para Finanzas",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-compliance",
+    "nombre": "Programa de Especialización en Compliance",
+    "nivel": "ONLINE",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "programa-de-especializacion-en-compliance-online",
+    "nombre": "Programa de Especialización en Compliance (online)",
+    "nivel": "ONLINE",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "programa-de-especializacion-en-debt-advisory-alternativas-de-financiacion",
+    "nombre": "Programa de Especialización en Debt Advisory: Alternativas de Financiación",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-derecho-de-los-mercados-financieros",
+    "nombre": "Programa de Especialización en Derecho de los Mercados Financieros",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-derecho-penal-economico",
+    "nombre": "Programa de Especialización en Derecho Penal Económico",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-derecho-regulatorio-de-seguros",
+    "nombre": "Programa de Especialización en Derecho Regulatorio de Seguros",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-energias-renovables-inversion-y-financiacio",
+    "nombre": "Programa de Especialización en Energías Renovables: Inversión y Financiació",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-finanzas-cuantitativas-y-valoracion-de-derivad",
+    "nombre": "Programa de Especialización en Finanzas Cuantitativas y Valoración de Derivad",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-inversiones-alternativas",
+    "nombre": "Programa de Especialización en Inversiones Alternativas",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-mergers-acquisitions-ma-y-private-equity",
+    "nombre": "Programa de especialización en Mergers & Acquisitions (M&A) y Private Equity",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-project-finance",
+    "nombre": "Programa de Especialización en Project Finance",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-real-estate",
+    "nombre": "Programa de Especialización en Real Estate",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-de-especializacion-en-sostenibilidad-y-compliance",
+    "nombre": "Programa de especialización en Sostenibilidad y Compliance",
+    "nivel": "ONLINE",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_ONLINE"
+  },
+  {
+    "slug": "programa-de-especializacion-en-valoracion-de-empresas",
+    "nombre": "Programa de Especialización en Valoración de Empresas",
+    "nivel": "POSGRADO",
+    "familia": "Programas de Especialización",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-directivo-en-gestion-patrimonial-familiar",
+    "nombre": "Programa Directivo en Gestión Patrimonial Familiar",
+    "nivel": "POSGRADO",
+    "familia": "Programas directivos",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  },
+  {
+    "slug": "programa-directivo-en-planificacion-financiera-european-financial-planner",
+    "nombre": "Programa Directivo en Planificación Financiera (European Financial Planner)",
+    "nivel": "POSGRADO",
+    "familia": "Programas directivos",
+    "categoriaFlujo": "MASTER_PRESENCIAL"
+  }
+]

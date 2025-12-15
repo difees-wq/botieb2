@@ -1,0 +1,16 @@
+CONTENT
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Running lint..."
+pnpm lint || exit 1
+
+echo "🧪 Running unit tests..."
+pnpm test:unit || exit 1
+
+echo "✓ Pre-commit checks passed"
+
+
+🏗 Extra: Scripts NPM sugeridos
+Estos scripts se colocan en backend/package.json y frontend-widget/package.json para desarrollo fluido.
+

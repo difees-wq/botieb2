@@ -1,0 +1,28 @@
+
+
+{
+  "info": {
+    "name": "IEB Web Assistant API",
+    "_postman_id": "e7d3fds8-xx12-4c77-a12a-ff887ab23",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Session",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{API_URL}}/session"
+      }
+    },
+    {
+      "name": "Send Message",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{API_URL}}/message"
+      }
+    }
+  ]
+}
+
