@@ -1,7 +1,7 @@
 
 
-import { BusinessRuleError, ValidationError } from "../domain/errors";
-import { LeadDraft } from "../domain/models/lead-draft";
+import { BusinessRuleError, ValidationError } from "../domain/errors.js";
+import { LeadDraft } from "../domain/models/lead-draft.js";
 
 export class GdprService {
 validateAccepted(draft: LeadDraft) {

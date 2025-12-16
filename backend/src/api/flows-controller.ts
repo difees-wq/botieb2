@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { FlowEngine } from "../flow-engine/flow-engine";
-import { ValidationError } from "../domain/errors";
+import { FlowEngine } from "../flow-engine/flow-engine.js";
+import { ValidationError } from "../domain/errors.js";
 
 export class FlowsController {
 constructor(private readonly flow: FlowEngine) {}

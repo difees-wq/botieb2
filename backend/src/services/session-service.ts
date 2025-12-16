@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { Pool } from "pg";
-import { ConversationState } from "../domain/models/chat-flow";
-import { NotFoundError, DatabaseError } from "../domain/errors";
+import { ConversationState } from "../domain/models/chat-flow.js";
+import { NotFoundError, DatabaseError } from "../domain/errors.js";
 
 export interface SessionServiceApi {
   createOrGetSession(visitorHash: string, urlOrigen: string): Promise<ChatSession>;

@@ -1,7 +1,7 @@
 
 
-import { CourseCatalogItem } from "../domain/models/course-catalog";
-import { TipoEstudio } from "../domain/enums";
+import { CourseCatalogItem } from "../domain/models/course-catalog.js";
+import { TipoEstudio } from "../domain/enums.js";
 
 export class UrlContextService {
 constructor(private readonly catalog: CourseCatalogItem[]) {}

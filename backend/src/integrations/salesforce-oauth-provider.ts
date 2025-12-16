@@ -1,6 +1,6 @@
-import { HttpClient } from "./http-client";
-import { RetryPolicy } from "./retry-policy";
-import { IntegrationError } from "../domain/errors";
+import { HttpClient } from "./http-client.js";
+import { RetryPolicy } from "./retry-policy.js";
+import { IntegrationError } from "../domain/errors.js";
 
 export interface SalesforceOAuthConfig {
   clientId: string;

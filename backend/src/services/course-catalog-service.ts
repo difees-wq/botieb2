@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { TipoEstudio } from "../domain/enums";
+import { TipoEstudio } from "../domain/enums.js";
 import { CourseCatalogDbRepository, DbCourseRow, DbCourseOfferingRow } from "../repositories/course-catalog-db-repository";
 
 // Estructura cruda del JSON (sin derivar tipoEstudio aquí según restricción de cambios mínimos)

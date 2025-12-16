@@ -1,11 +1,11 @@
 
-import { ChatSessionRepository } from "../repositories/chat-session-repository";
-import { FlowService } from "./flow-service";
-import { LeadService } from "./lead-service";
-import { LoggingService } from "./logging-service";
-import { EntradaUsuario, MessageResponseDto } from "../domain/dtos/message-dtos";
-import { CourseCatalogService } from "./course-catalog-service";
-import { NotFoundError } from "../domain/errors";
+import { ChatSessionRepository } from "../repositories/chat-session-repository.js";
+import { FlowService } from "./flow-service.js";
+import { LeadService } from "./lead-service.js";
+import { LoggingService } from "./logging-service.js";
+import { EntradaUsuario, MessageResponseDto } from "../domain/dtos/message-dtos.js";
+import { CourseCatalogService } from "./course-catalog-service.js";
+import { NotFoundError } from "../domain/errors.js";
 
 export class MessageService {
 constructor(

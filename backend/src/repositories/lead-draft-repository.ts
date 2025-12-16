@@ -1,6 +1,6 @@
 import { Pool } from "pg";
-import { LeadDraft } from "../domain/models/lead-draft";
-import { DatabaseError } from "../domain/errors";
+import { LeadDraft } from "../domain/models/lead-draft.js";
+import { DatabaseError } from "../domain/errors.js";
 
 export class LeadDraftRepository {
   constructor(private readonly db: Pool) {}

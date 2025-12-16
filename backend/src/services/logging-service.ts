@@ -1,7 +1,7 @@
 
 import { v4 as uuid } from "uuid";
-import { MessageLogRepository } from "../repositories/message-log-repository";
-import { EventLogRepository } from "../repositories/event-log-repository";
+import { MessageLogRepository } from "../repositories/message-log-repository.js";
+import { EventLogRepository } from "../repositories/event-log-repository.js";
 
 export class LoggingService {
 	constructor(

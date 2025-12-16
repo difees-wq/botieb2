@@ -1,5 +1,5 @@
 import { Pool } from "pg";
-import { DatabaseError } from "../domain/errors";
+import { DatabaseError } from "../domain/errors.js";
 
 export class EventLogRepository {
   constructor(private readonly db: Pool) {}

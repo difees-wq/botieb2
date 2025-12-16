@@ -1,5 +1,5 @@
 import { Pool } from 'pg';
-import { loadAppConfig } from '../config/app-config';
+import { loadAppConfig } from '../config/app-config.js';
 
 let pool: Pool | null = null;
 

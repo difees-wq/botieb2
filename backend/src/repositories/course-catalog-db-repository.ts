@@ -1,5 +1,5 @@
 import { Pool } from "pg";
-import { getDbPool } from "../config/db-connection";
+import { getDbPool } from "../config/db-connection.js";
 import { v4 as uuidv4 } from "uuid";
 
 // Re-definimos interfaces mínimas para evitar dependencia circular con el servicio que usa otras estructuras.

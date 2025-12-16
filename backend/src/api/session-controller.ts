@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { SessionService } from "../services/session-service";
-import { ValidationError, NotFoundError } from "../domain/errors";
+import { SessionService } from "../services/session-service.js";
+import { ValidationError, NotFoundError } from "../domain/errors.js";
 
 export class SessionController {
   constructor(private readonly service: SessionService) {}

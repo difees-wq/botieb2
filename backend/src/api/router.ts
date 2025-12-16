@@ -1,6 +1,6 @@
 
 import { Router } from "express";
-import { Controllers } from "../config/dependency-container";
+import { Controllers } from "../config/dependency-container.js";
 
 export function buildRouter(controllers: Controllers): Router {
 const r = Router();

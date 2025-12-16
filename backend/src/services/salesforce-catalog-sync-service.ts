@@ -1,6 +1,6 @@
-import { SalesforceService } from "../integrations/salesforce-service";
-import { IntegrationError, SalesforceError } from "../domain/errors";
-import { CourseCatalogDbRepository, CourseUpsertInput, CourseOfferingUpsertInput } from "../repositories/course-catalog-db-repository";
+import { SalesforceService } from "../integrations/salesforce-service.js";
+import { IntegrationError, SalesforceError } from "../domain/errors.js";
+import { CourseCatalogDbRepository, CourseUpsertInput, CourseOfferingUpsertInput } from "../repositories/course-catalog-db-repository.js";
 
 /**
  * Interfaces requested for the sync output.

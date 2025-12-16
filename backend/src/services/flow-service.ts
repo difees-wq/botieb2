@@ -1,8 +1,8 @@
 
-import { FlowDefinition, FlowNode } from "../domain/dtos/flow-dtos";
-import { FlowStateError, ValidationError } from "../domain/errors";
-import { ChatSession } from "../domain/models/chat-session";
-import { EntradaUsuario } from "../domain/dtos/message-dtos";
+import { FlowDefinition, FlowNode } from "../domain/dtos/flow-dtos.js";
+import { FlowStateError, ValidationError } from "../domain/errors.js";
+import { ChatSession } from "../domain/models/chat-session.js";
+import { EntradaUsuario } from "../domain/dtos/message-dtos.js";
 
 export class FlowService {
 constructor(private readonly flows: Record<string, FlowDefinition>) {}

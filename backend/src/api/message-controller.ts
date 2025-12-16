@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { MessageService } from "../services/message-service";
-import { mapErrorToHttp } from "./error-mapper";
+import { MessageService } from "../services/message-service.js";
+import { mapErrorToHttp } from "./error-mapper.js";
 
 export class MessageController {
 constructor(private readonly service: MessageService) {}

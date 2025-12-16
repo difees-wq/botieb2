@@ -1,6 +1,6 @@
 import { Pool } from "pg";
-import { ChatSession } from "../domain/models/chat-session";
-import { DatabaseError } from "../domain/errors";
+import { ChatSession } from "../domain/models/chat-session.js";
+import { DatabaseError } from "../domain/errors.js";
 
 export class ChatSessionRepository {
   constructor(private readonly db: Pool) {}

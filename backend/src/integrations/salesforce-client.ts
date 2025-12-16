@@ -1,4 +1,4 @@
-import { IntegrationError } from "../domain/errors";
+import { IntegrationError } from "../domain/errors.js";
 
 interface SalesforceTokenResponse {
   access_token: string;

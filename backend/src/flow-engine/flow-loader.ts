@@ -1,9 +1,9 @@
 
 import fs from "fs";
 import path from "path";
-import { FlowDefinition } from "./flow-node-types";
-import { FlowValidator } from "./flow-validator";
-import { FlowStateError } from "../domain/errors";
+import { FlowDefinition } from "./flow-node-types.js";
+import { FlowValidator } from "./flow-validator.js";
+import { FlowStateError } from "../domain/errors.js";
 
 export class FlowLoader {
 static loadAllFlows(): Record<string, FlowDefinition> {

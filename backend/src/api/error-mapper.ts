@@ -6,7 +6,7 @@ BusinessRuleError,
 FlowStateError,
 IntegrationError,
 SalesforceError
-} from "../domain/errors";
+} from "../domain/errors.js";
 
 export function mapErrorToHttp(err: any) {
 if (err instanceof ValidationError) {

@@ -1,7 +1,7 @@
-import { FlowDefinition, FlowNode } from "./flow-node-types";
-import { EntradaUsuario } from "../domain/dtos/message-dtos";
-import { FlowStateError, ValidationError } from "../domain/errors";
-import { ChatSession } from "../domain/models/chat-session";
+import { FlowDefinition, FlowNode } from "./flow-node-types.js";
+import { EntradaUsuario } from "../domain/dtos/message-dtos.js";
+import { FlowStateError, ValidationError } from "../domain/errors.js";
+import { ChatSession } from "../domain/models/chat-session.js";
 
 export class FlowEngine {
   constructor(private readonly flows: Record<string, FlowDefinition>) {}

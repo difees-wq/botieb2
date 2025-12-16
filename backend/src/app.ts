@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
-import { buildRouter } from "./api/router";
-import chatRoutes from "./routes/chat-routes";
-import { AppConfig } from "./config/app-config";
-import { buildDependencyContainer } from "./config/dependency-container";
+import { buildRouter } from "./api/router.js";
+import chatRoutes from "./routes/chat-routes.js";
+import { AppConfig } from "./config/app-config.js";
+import { buildDependencyContainer } from "./config/dependency-container.js";
 
 export function buildApp(config: AppConfig) {
 	const app = express();

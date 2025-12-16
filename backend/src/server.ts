@@ -1,7 +1,7 @@
 import http from "http";
-import { buildApp } from "./app";
-import { loadAppConfig } from "./config/app-config";
-import { logger } from "./utils/logger";
+import { buildApp } from "./app.js";
+import { loadAppConfig } from "./config/app-config.js";
+import { logger } from "./utils/logger.js";
 
 async function start() {
 const config = loadAppConfig();

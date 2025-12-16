@@ -1,6 +1,6 @@
-import { AppConfig } from "../config/app-config";
-import { CourseCatalogItem } from "../domain/models/course-catalog";
-import { TipoEstudio } from "../domain/enums";
+import { AppConfig } from "../config/app-config.js";
+import { CourseCatalogItem } from "../domain/models/course-catalog.js";
+import { TipoEstudio } from "../domain/enums.js";
 
 /**
  * Repositorio de catálogo de cursos.

@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { LeadService } from "../services/lead-service";
-import { SessionService } from "../services/session-service";
-import { mapErrorToHttp } from "./error-mapper";
+import { LeadService } from "../services/lead-service.js";
+import { SessionService } from "../services/session-service.js";
+import { mapErrorToHttp } from "./error-mapper.js";
 
 export class LeadController {
   constructor(

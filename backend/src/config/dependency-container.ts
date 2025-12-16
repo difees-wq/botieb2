@@ -1,29 +1,29 @@
-import { AppConfig } from "./app-config";
-import { getDbPool } from "./db-connection";
+import { AppConfig } from "./app-config.js";
+import { getDbPool } from "./db-connection.js";
 
 // Services
-import { UrlContextService } from "../services/url-context-service";
-import { SessionService } from "../services/session-service";
-import { GdprService } from "../services/gdpr-service";
-import { FlowService } from "../services/flow-service";
-import { LeadService } from "../services/lead-service";
-import { LoggingService } from "../services/logging-service";
-import { MessageService } from "../services/message-service";
-import { CourseCatalogService } from "../services/course-catalog-service";
-import { CourseCatalogDbRepository } from "../repositories/course-catalog-db-repository";
-import { SalesforceAuthProvider } from "../integrations/salesforce-auth-provider";
-import { SalesforceService } from "../integrations/salesforce-service";
-import { TipoEstudio } from "../domain/enums";
+import { UrlContextService } from "../services/url-context-service.js";
+import { SessionService } from "../services/session-service.js";
+import { GdprService } from "../services/gdpr-service.js";
+import { FlowService } from "../services/flow-service.js";
+import { LeadService } from "../services/lead-service.js";
+import { LoggingService } from "../services/logging-service.js";
+import { MessageService } from "../services/message-service.js";
+import { CourseCatalogService } from "../services/course-catalog-service.js";
+import { CourseCatalogDbRepository } from "../repositories/course-catalog-db-repository.js";
+import { SalesforceAuthProvider } from "../integrations/salesforce-auth-provider.js";
+import { SalesforceService } from "../integrations/salesforce-service.js";
+import { TipoEstudio } from "../domain/enums.js";
 
 // Repositories (all expect a pg Pool, not AppConfig)
-import { ChatSessionRepository } from "../repositories/chat-session-repository";
-import { LeadDraftRepository } from "../repositories/lead-draft-repository";
-import { MessageLogRepository } from "../repositories/message-log-repository";
-import { EventLogRepository } from "../repositories/event-log-repository";
+import { ChatSessionRepository } from "../repositories/chat-session-repository.js";
+import { LeadDraftRepository } from "../repositories/lead-draft-repository.js";
+import { MessageLogRepository } from "../repositories/message-log-repository.js";
+import { EventLogRepository } from "../repositories/event-log-repository.js";
 
 // Flow engine (current implementation: load JSON definitions → service)
-import { FlowLoader } from "../flow-engine/flow-loader";
-import { FlowEngine } from "../flow-engine/flow-engine";
+import { FlowLoader } from "../flow-engine/flow-loader.js";
+import { FlowEngine } from "../flow-engine/flow-engine.js";
 
 // Integrations
 // Simplified stub for Salesforce to avoid integration complexity in this refactor
@@ -34,11 +34,11 @@ class StubSalesforceService {
 }
 
 // Controllers
-import { SessionController } from "../api/session-controller";
-import { MessageController } from "../api/message-controller";
-import { LeadController } from "../api/lead-controller";
-import { FlowsController } from "../api/flows-controller";
-import { HealthController } from "../api/health-controller";
+import { SessionController } from "../api/session-controller.js";
+import { MessageController } from "../api/message-controller.js";
+import { LeadController } from "../api/lead-controller.js";
+import { FlowsController } from "../api/flows-controller.js";
+import { HealthController } from "../api/health-controller.js";
 
 // Shape consumed by router
 export interface Controllers {

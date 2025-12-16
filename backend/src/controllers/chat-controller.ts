@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
-import { loadAppConfig } from '../config/app-config';
-import { buildDependencyContainer } from '../config/dependency-container';
-import { FlowLoader } from '../flow-engine/flow-loader';
-import { FlowEngine } from '../flow-engine/flow-engine';
-import { getDbPool } from '../config/db-connection';
-import { DynamicQueryHandler } from './dynamic-query-handler';
-import { LeadService } from '../services/lead-service';
+import { loadAppConfig } from '../config/app-config.js';
+import { buildDependencyContainer } from '../config/dependency-container.js';
+import { FlowLoader } from '../flow-engine/flow-loader.js';
+import { FlowEngine } from '../flow-engine/flow-engine.js';
+import { getDbPool } from '../config/db-connection.js';
+import { DynamicQueryHandler } from './dynamic-query-handler.js';
+import { LeadService } from '../services/lead-service.js';
 
 
 // Build dependencies once per process

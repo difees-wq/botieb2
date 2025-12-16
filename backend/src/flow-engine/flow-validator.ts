@@ -1,5 +1,5 @@
-import { FlowDefinition, FlowNode } from "./flow-node-types";
-import { FlowStateError } from "../domain/errors";
+import { FlowDefinition, FlowNode } from "./flow-node-types.js";
+import { FlowStateError } from "../domain/errors.js";
 
 export class FlowValidator {
   static validateFlow(def: FlowDefinition): void {

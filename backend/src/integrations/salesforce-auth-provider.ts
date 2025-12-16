@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import { IntegrationError } from "../domain/errors";
+import { IntegrationError } from "../domain/errors.js";
 
 export interface SalesforceAuthConfig {
   domain: string; // e.g. https://login.salesforce.com OR https://yourinstance.my.salesforce.com

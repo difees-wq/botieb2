@@ -1,7 +1,7 @@
 
 import request from "supertest";
-import { buildApp } from "../../src/app";
-import { loadAppConfig } from "../../src/config/app-config";
+import { buildApp } from "../../src/app.js";
+import { loadAppConfig } from "../../src/config/app-config.js";
 
 describe("Integración - GET /api/chatbot/flows/:tipo", () => {
 const app = buildApp(loadAppConfig());

@@ -1,12 +1,12 @@
 
 
-import { LeadDraftRepository } from "../repositories/lead-draft-repository";
-import { SalesforceService } from "../integrations/salesforce-service";
-import { LeadInputDto, LeadEvaluationResult, LeadFlagsResult } from "../domain/dtos/lead-dtos";
-import { ChatSession } from "../domain/models/chat-session";
-import { GdprService } from "./gdpr-service";
-import { BusinessRuleError } from "../domain/errors";
-import { SalesforceClient, LeadPayload } from "../integrations/salesforce-client";
+import { LeadDraftRepository } from "../repositories/lead-draft-repository.js";
+import { SalesforceService } from "../integrations/salesforce-service.js";
+import { LeadInputDto, LeadEvaluationResult, LeadFlagsResult } from "../domain/dtos/lead-dtos.js";
+import { ChatSession } from "../domain/models/chat-session.js";
+import { GdprService } from "./gdpr-service.js";
+import { BusinessRuleError } from "../domain/errors.js";
+import { SalesforceClient, LeadPayload } from "../integrations/salesforce-client.js";
 
 export class LeadService {
 constructor(

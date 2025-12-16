@@ -1,7 +1,7 @@
 
 import fetch from "node-fetch";
-import { SalesforceAuthProvider } from "./salesforce-auth-provider";
-import { SalesforceError, IntegrationError } from "../domain/errors";
+import { SalesforceAuthProvider } from "./salesforce-auth-provider.js";
+import { SalesforceError, IntegrationError } from "../domain/errors.js";
 
 export class SalesforceService {
   constructor(private readonly auth: SalesforceAuthProvider) {}
