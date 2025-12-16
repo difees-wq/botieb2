@@ -12,7 +12,7 @@ tipo: "TEXT" | "NUMBER" | "DATE" | "EMAIL" | "TEL";
 
 export interface FlowNode {
 id: string;
-tipo: "INFO" | "BOTONERA" | "FORM";
+tipo: "INFO" | "BOTONERA" | "FORM" | "DYNAMIC";
 titulo: string;
 texto?: string;
 opciones?: FlowOption[];

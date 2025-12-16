@@ -19,10 +19,10 @@ export class SessionController {
         throw new ValidationError("URL_ORIGEN_REQUERIDO", "Falta urlOrigen");
       }
 
-      const result = await this.service.createSession({
-        urlOrigen,
-        visitanteHash: visitanteHash ?? ""
-      });
+      const result = await this.service.createOrGetSession(
+        visitanteHash ?? "",
+        urlOrigen
+      );
 
       console.log("[SessionController.create] SESION CREADA:", result);
 
